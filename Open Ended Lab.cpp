@@ -55,7 +55,7 @@
 	cout<<"\tAssalamunAlaikum!\n";
 	cout<<"\tWelcome dear Sir/Madam.\n";
 	SetConsoleTextAttribute(hConsole, 7 );
-    cout<<"==============================";
+        cout<<"==============================";
 	SetConsoleTextAttribute(hConsole, 30 );
 	cout<<"Main Menu";
 	SetConsoleTextAttribute(hConsole, 7 );
@@ -95,13 +95,13 @@
 	 {
 		case 'B':
 		case 'b':
-			menu = breakfast;
-            menuSize = 8;                
+		   menu = breakfast;
+                   menuSize = 8;                
 			display_breakfast(menu, menuSize);
 			cout<<"-----------------------------------------------------------------------\n";
 		    cout<<"\nChoose Your breakfast menu.\n Press:"<<endl;
 		    cout<<" '1' for Anda Paratha"<<endl;
-			cout<<" '2' for Nan Channy"<<endl;
+		    cout<<" '2' for Nan Channy"<<endl;
 		    cout<<" '3' for Siri Paye"<<endl;
 		    cout<<" '4' for Karak Chai"<<endl;
 		    cout<<" '5' for Fried Egg"<<endl;
@@ -137,40 +137,40 @@
            		bill_amount=quantity*items_price;
            	    break;
            	case 5:
-			   items_price=160;
+		   items_price=160;
            		cout<<setw(70)<<setfill(' ')<<"\nWhat amount of Fried Egg would you like to order :";
            		cin>>quantity;
            		bill_amount=quantity*items_price;
            	    break;
            	case 6:
-			   items_price=250;
+		   items_price=250;
            		cout<<setw(70)<<setfill(' ')<<"\nWhat amount of Latte Coffee would you like to order :";
            		cin>>quantity;
            		bill_amount=quantity*items_price;
            	    break;   
-            case 7:
-			   items_price=350;
+                case 7:
+		   items_price=350;
            		cout<<setw(70)<<setfill(' ')<<"\nWhat amount of Cheese Pratha would you like to order :";
            		cin>>quantity;
            		bill_amount=quantity*items_price;
            	    break; 
-			case 8:
-			   items_price=200;
+		case 8:
+		   items_price=200;
            		cout<<setw(70)<<setfill(' ')<<"\nWhat amount of Sooji Halwa would you like to order :";
            		cin>>quantity;
            		bill_amount=quantity*items_price; 
            	    break;
-			default :
+		default :
 	            SetConsoleTextAttribute(hConsole, 12 );
-			 	cout<<"Error! Please enter the correct option.";
+			 cout<<"Error! Please enter the correct option.";
 	     	    SetConsoleTextAttribute(hConsole, 7 );
-	        	return 0;     
+	            return 0;     
 		    }  
 	    break;
 		case 'L':
 		case 'l':	
-        menu = lunch;
-        menuSize = 8;
+                  menu = lunch;
+                  menuSize = 8;
 		    display_lunch(menu, menuSize);
 		    cout<<"--------------------------------------------------------------------"<<endl;
 		    cout<<"\nChoose Your Lunch menu.\n Press:"<<endl; 
@@ -182,14 +182,14 @@
 		    cout<<" '6' for Chicken Sandwich."<<endl;
 		    cout<<" '7' for Haleem"<<endl;
 		    cout<<" '8' for Shami Kabab"<<endl;
-		   cout<<"\nEnter your choice:";
-           cin>>sub_menu;
+		    cout<<"\nEnter your choice:";
+                    cin>>sub_menu;
            switch(sub_menu)
            {
            	case 1:
            	   items_price=500;
            		cout<<setw(70)<<setfill(' ')<<"\nWhat amount of Chicken Biryani would you like to order :";
-           	    cin>>quantity;
+           	        cin>>quantity;
            		bill_amount=quantity*items_price;
            	    break;
            	case 2:
@@ -222,31 +222,31 @@
            		cin>>quantity;
            		bill_amount=quantity*items_price;
            	    break;  
-			case 7:
-			   items_price=300;
+		case 7:
+		   items_price=300;
            		cout<<setw(70)<<setfill(' ')<<"\nWhat amount of Haleem would you like to order :";
            		cin>>quantity;
            		bill_amount=quantity*items_price;
            	    break;    
-            case 8:
-			   items_price=200;
+                case 8:
+		   items_price=200;
            		cout<<setw(70)<<setfill(' ')<<"\nWhat amount of Shami Kabab would you like to order :";
            		cin>>quantity;
            		bill_amount=quantity*items_price;    
            	    break; 
-			default :
+	        default :
 	            SetConsoleTextAttribute(hConsole, 12 );
-			 	cout<<"Error! Please enter the correct option.";
+			 cout<<"Error! Please enter the correct option.";
 	     	    SetConsoleTextAttribute(hConsole, 7 );
-	        	return 0;  
+	            return 0;  
 		   }
 		break;
 		case 'D':
 		case 'd':
-           menu = dinner;
-           menuSize = 8;
+                 menu = dinner;
+                 menuSize = 8;
 		     display_dinner(menu, menuSize);
-		     cout<<"-----------------------------------------------------------------------"<<endl;
+		    cout<<"-----------------------------------------------------------------------"<<endl;
 		    cout<<"\nChoose Your Dinner menu.\n Press:"<<endl;
 		    cout<<" '1' for Chicken Karahi."<<endl;
 		    cout<<" '2' for Mutton Karahi."<<endl;
@@ -256,59 +256,59 @@
 		    cout<<" '6' for Chicken Roll Paratha"<<endl;
 		    cout<<" '7' for Yakhni Goshtaba"<<endl;
 		    cout<<" '8' for Mixed Vegetable"<<endl;
-		cout<<"\nEnter your choice:";
-           cin>>sub_menu;
+		    cout<<"\nEnter your choice:";
+                    cin>>sub_menu;
            switch(sub_menu)
            { 
-            case 1:
+              case 1:
                items_price=1200;
            		cout<<setw(70)<<setfill(' ')<<"\nWhat amount of Chicken Karahi would you like to order :";
            		cin>>quantity;
            		bill_amount=quantity*items_price;
            	    break;
-           	case 2:
+              case 2:
                items_price=2000;
            		cout<<setw(70)<<setfill(' ')<<"\nWhat amount of Mutton Karahi would you like to order :";
            		cin>>quantity;
            		bill_amount=quantity*items_price;
            	    break;
-           	case 3:
-           	   items_price=1600;
+              case 3:
+               items_price=1600;
            		cout<<setw(70)<<setfill(' ')<<"\nWhat amount of Beaf Karahi would you like to order :";
            		cin>>quantity;
            		bill_amount=quantity*items_price;
            	    break;
-           	case 4:
-           	   items_price=1050;
+               case 4:
+           	items_price=1050;
            		cout<<setw(70)<<setfill(' ')<<"\nWhat amount of BBQ would you like to order :";
            		cin>>quantity;
            		bill_amount=quantity*items_price;
            	    break;
            	case 5:
-		       items_price=1000;
+		 items_price=1000;
            		cout<<setw(70)<<setfill(' ')<<"\nWhat amount of Chappal Kabab would you like to order :";
            		cin>>quantity;
            		bill_amount=quantity*items_price;
-           	    break;
+           	    break; 
            	case 6:
-		       items_price=300;
+		 items_price=300;
            		cout<<setw(70)<<setfill(' ')<<"\nWhat amount of Chicken Roll Paratha would you like to order :";
            		cin>>quantity;
            		bill_amount=quantity*items_price;
            	    break; 
            	case 7:
-			   items_price=300;
+	         items_price=300;
            		cout<<setw(70)<<setfill(' ')<<"\nWhat amount of Yakhni Goshtaba would you like to order :";
            		cin>>quantity;
            		bill_amount=quantity*items_price;
            	    break; 
-			case 8:
-			   items_price=200;
+		case 8:
+		 items_price=200;
            		cout<<setw(70)<<setfill(' ')<<"\nWhat amount of Mixed Vegetable would you like to order :";
            		cin>>quantity;
            		bill_amount=quantity*items_price;
            	    break; 
-		    default :
+		default :
 	            SetConsoleTextAttribute(hConsole, 12 );
 			 	cout<<"Error! Please enter the correct option.";
 	     	    SetConsoleTextAttribute(hConsole, 7 );
